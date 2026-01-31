@@ -396,3 +396,83 @@ body {
   opacity: 0.6;
 }
 
+/* === 📱 Адаптивность хедера === */
+
+@media (max-width: 600px) {
+
+    /* Контейнер хедера */
+    .header-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    /* Логотип */
+    .header-logo-btn img {
+        width: 60px;
+    }
+
+    /* Навигация скрывается (если нужен бургер — скажи) */
+    .nav-bar {
+        display: none;
+    }
+
+    /* Поисковая строка */
+    .search-container {
+        margin-top: 10px;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+        padding: 10px 14px;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    /* Слайдер */
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        height: 250px;
+    }
+
+    /* Главный заголовок */
+    .main-text {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    /* Карточки */
+    .card-group {
+        padding: 0 10px 40px;
+        gap: 20px;
+    }
+
+    .place-card {
+        max-width: 100%;
+    }
+
+    /* Описание */
+    .site-description {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .site-description p {
+        font-size: 16px;
+    }
+
+    /* Футер */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
